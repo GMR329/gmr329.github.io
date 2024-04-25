@@ -1,0 +1,64 @@
+img {
+width: 300px;
+height: 300px; 
+border-radius: 30px; 
+margin-right: 10px; 
+margin-left: auto; 
+margin-right: auto; 
+}
+.username {
+font-weight: bold; 
+}
+h1.sects {
+font-weight: bold; 
+}
+
+/* This houses all project flex stuff */
+div.scroll-container {
+  background-color: #FAF2C3;
+  overflow: auto;
+  /* overflow-x: auto;  */
+  white-space: nowrap;
+  padding: 10px;
+  direction: horizontal; 
+}
+
+/* Scroll container holds main project image and text */
+div.scroll-container img {
+  padding: 5px;
+}
+div.main-proj-contain {
+    padding-inline: 20px; 
+    display: inline-block; 
+    flex-direction: column; 
+    width: 300px; 
+}
+/* Change to whole div somehow? */
+div.main-proj-contain img:hover {
+    cursor: pointer; 
+}
+/* Make container clickable everywhere */
+a.fill-div {
+    display: block; 
+    height: 100%; 
+    width: 100%; 
+    text-decoration: none; 
+}
+
+.proj-label {
+    text-align: center; 
+}
+
+/* Sub projects should be side by side and expanding down */
+div.sub-projects {
+    display: inline-block; 
+    /* display: flex;  */
+    /* padding: 10%;  */
+    padding-inline: 15%; 
+}
+/* .sub-projects.space-around{ */
+    /* justify-content: space-around;  */
+/* } */
+/* .sub-projects.space-between{ */
+    /* justify-content: space-between;  */
+/* } */
