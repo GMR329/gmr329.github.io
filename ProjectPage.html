@@ -7,6 +7,7 @@
 
 		<link rel="stylesheet" href="Styling/Theme.css">
 		<link rel="stylesheet" href="Styling/ProjectPageStyle.css">
+		<link rel="stylesheet" href="Styling/PopupStyle.css">
 	</head>
 	<body>
 		<div class="topnav">
@@ -48,11 +49,20 @@
 		<div class="sub-projects">
 			<h1 class="sects">Builds</h1>
 
+			<!-- connects to javascript file for making popups visible -->
 			<script src="Scripts/sub-projectInteract.js"></script>
 
 			<div class="builds-row">
 				<div class="builds-col">
-					<img class="p-small-icon" src="media/images/DiceTrayClip.jpg" alt="Dice Tray">
+
+					<img id="dice-modal-img" class="p-small-icon" src="media/images/DiceTrayClip.jpg" alt="Dice Tray">
+					<div id="dice-modal" class="modal">
+						<span class="close">&times;</span>
+						<!-- make below a div with full content stuff -->
+						<img class="modal-content" id="img01" src="media/images/DiceTrayClip.jpg">
+						<div id="caption"></div>
+					</div>
+
 					<img class="p-small-icon" src="media/images/PaintBoxClip.jpg" alt="Paint Box">
 				</div>
 				<div class="builds-col">
