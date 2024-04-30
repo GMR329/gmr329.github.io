@@ -5,15 +5,47 @@
 		<!-- this is favicon -- see favicon.cc  -->
 		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
 
-		<link rel="stylesheet" href="Theme.css">
+		<link rel="stylesheet" href="Styling/Theme.css"> 
+		<link rel="stylesheet" href="Styling/SpecificProjectStyle.css">
 	</head>
 	<body>
+		<!-- nav bar info -->
 		<div class="topnav">
 			<a href="index.html">Home</a>
 			<a href="ProjectPage.html">Projects</a>
 			<a href="About.html" class="split">About</a>
 		</div>
-		<h1>PROJECT NUMBER 1!!!</h1>
 
+		<h1 class="proj-page-title">RC Car</h1>
+
+		<!-- holds photos and videos horizontally -->
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Pre-Tire Design</h3>
+				<img class="vert-med" src="media/images/RCcar/Plastic1.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Automatic Forward/Reverse</h3>
+				<video class="vert-med" width="270" height="480" controls loop autoplay muted>
+					<source src="media/videos/TiresRun.mp4">
+				</video>
+			</div>
+			<div class="head-media">
+				<h3>Early Cardboard Prototype</h3>
+				<img class="vert-med" src="media/images/RCcar/Cardboard1.jpg">
+			</div>
+		</div>
+
+		<h2>The Project:</h2>
+		<p>I believe an RC car is a great way to learn many fundamentals that can be applied to many projects of all different types. An RC car (like this one) can bring together mechanical design work, electrical wiring, and programming. At its heart is an Arduino Mega2560 running 4 DC motors in gear boxes that operate a simple car. </p>
+
+		<h2>At a Glance:</h2>
+		<ul>
+			<li>Utilized Solidworks 3D modeling, the Cura slice tool, and a 3D printer to create wheels, tires, body, and motor mount bracket systems</li>
+			<li>Programmed an Arduino Mega2560 using the Arduino IDE to act as a control system</li>
+			<li>Soldered Arduino shield consisting of pin headers, L293D DC Motor Driver ICs, and interconnect wires onto solder board for early prototype</li>
+			<li>Created modular design by making removable motor mounts and rail system to allow interchangeable parts and upgradability </li>
+			<li>Used NRF24L01 radio frequency module to allow for remote communication and control</li>
+		</ul>
 	</body>
 </html>

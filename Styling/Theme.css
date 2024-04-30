@@ -1,0 +1,64 @@
+:root {
+    /*prev colors: #1D97C1 */
+    --text: #5AB0A7; 
+    --menuSelCol: #001f94;
+    --barColor: #006994; 
+}
+
+body {
+    background-color: #F6E4AD; 
+}
+
+h2{
+    color: var(--text); 
+}
+
+h1 {
+    color: var(--text);
+}
+
+p {
+    color: var(--text);
+}
+
+h {
+    color: var(--text);
+}
+
+h3 {
+    color: var(--text);
+}
+
+.topnav{
+    /* Make this blue or beach or something */
+    background-color: var(--barColor); 
+    overflow: hidden; 
+    padding-left: 0px; 
+    padding: 0; 
+    margin-top: 0px; 
+    width: 100%; 
+}
+
+.topnav a {
+    float: left; 
+    color: #f2f2f2; 
+    text-align: center; 
+    padding: 14px 16px; 
+    text-decoration: none; 
+    font-size: 17px; 
+}
+
+.topnav a:hover{
+    background-color: #ddd; 
+    color: var(--text); 
+}
+
+.topnav a.active {
+    background-color: var(--menuSelCol); 
+    color: white; 
+}
+
+.topnav a.split {
+    float: right; 
+    background-color: var(--menuSelCol); 
+}

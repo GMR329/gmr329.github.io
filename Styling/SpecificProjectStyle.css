@@ -1,0 +1,43 @@
+.proj-page-title{
+    /* width: 100%;  */
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center; 
+}
+
+.row-cont{
+    padding: 5px; 
+    direction: horizontal; 
+    text-align: center; /* this block is a life saver */
+}
+
+.head-media{
+    display: inline-block; 
+    margin: auto; 
+    padding-inline: 5%; 
+    text-align: center; 
+}
+
+.row-cont img{
+    width: 270px; 
+    height: 480px; 
+    border-radius: 15px; 
+}
+
+.row-cont video{
+    border-radius: 15px; 
+}
+
+p{
+    font-size: 20px; 
+    color: #001f94; 
+}
+
+li{
+    font-size: 20px; 
+    color: #001f94;
+}
+
+h3{
+    font-size: 22px; 
+}
