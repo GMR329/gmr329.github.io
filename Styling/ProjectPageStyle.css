@@ -7,8 +7,8 @@ margin-left: auto;
 margin-right: auto; 
 }
 img.p-small-icon {
-width: 150px;
-height: 150px; 
+width: 200px;
+height: 200px; 
 border-radius: 15px; 
 margin-right: 10px; 
 margin-left: auto; 
@@ -62,7 +62,7 @@ div.sub-projects {
     display: inline-block; 
     /* display: flex;  */
     /* padding: 10%;  */
-    padding-inline: 15%; 
+    padding-inline: 5%; 
     margin-top: 0px; 
 }
 /* .sub-projects.space-around{ */

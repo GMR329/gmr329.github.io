@@ -13,10 +13,28 @@
 }
 
 .modal-content{
+    background-color: #123456;
     margin: auto; 
-    display: block; 
+    /* display: block;  */
+    display: inline;
     width: 80%; 
     max-width: 700px; 
+    text-wrap: wrap; 
+}
+
+.modal-row{
+    background-color: #123456; 
+    display: block; 
+    left: auto; 
+    right: auto; 
+    margin: auto; 
+    width: 80%; 
+    max-width: 700px; 
+    text-align: center; 
+}
+
+.modal-row h3{
+    text-align: center; 
 }
 
 .close{
@@ -27,3 +45,18 @@
     font-size: 40px; 
     font-weight: bold; 
 }
+
+.modal-row img{
+    width: 300px; 
+    height: 300px; 
+}
+
+p{
+    max-width: 300px; 
+}
+
+.modal-content img:hover{
+    cursor: crosshair; 
+}
+
+

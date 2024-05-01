@@ -1,17 +1,61 @@
 //dice modal
 var diceModal = document.getElementById("dice-modal"); 
 
-var img = document.getElementById("dice-modal-img"); 
-var modalImg = document.getElementById("img01"); 
-var captionText = document.getElementById("caption"); 
-img.onclick = function(){
+var diceImg = document.getElementById("dice-modal-img"); 
+var diceModalImg = document.getElementById("diceImg1"); 
+
+diceImg.onclick = function(){
     diceModal.style.display = "block"; 
-    modalImg.src = this.src; 
-    captionText.innerHTML = this.alt;
+    diceModalImg.src = this.src; 
 }
 
-var span = document.getElementsByClassName("close")[0]; 
+var diceSpan = document.getElementsByClassName("close")[0]; 
 
-span.onclick = function(){
+diceSpan.onclick = function(){
     diceModal.style.display = "none"; 
+}
+
+//paint box modal
+var paintModal = document.getElementById("paint-modal"); 
+
+var paintImg = document.getElementById("paint-modal-img"); 
+var paintModalImg = document.getElementById("paintImg1"); 
+
+paintImg.onclick = function(){
+    paintModal.style.display = "block"; 
+    paintModalImg.src = this.src; 
+}
+
+var paintSpan = document.getElementsByClassName("close")[0]; 
+
+paintSpan.onclick = function(){
+    paintModal.style.display = "none"; 
+}
+
+
+
+
+
+
+document.onkeydown = function(evt){
+    evt = evt || window.event; 
+    var isEscape = false; 
+    if("key" in evt){
+        isEscape = (evt.key === "Escape" || evt.key === "Esc"); 
+    }else{
+        isEscape = (evt.keyCode === 27); 
+    }
+    if(isEscape){
+        diceModal.style.display = "none"; 
+        paintModal.style.display = "none"; 
+    }
+}
+
+window.onclick = function(event){
+    if (event.target == diceModal){
+        diceModal.style.display = "none"; 
+    }
+    if (event.target == paintModal){
+        paintModal.style.display = "none"; 
+    }
 }
