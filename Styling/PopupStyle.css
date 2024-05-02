@@ -51,6 +51,11 @@
     height: 300px; 
 }
 
+.wide-pic{
+    width: 533px; 
+    height: 300px; 
+}
+
 p{
     max-width: 300px; 
 }

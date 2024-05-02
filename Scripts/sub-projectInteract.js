@@ -32,6 +32,56 @@ paintSpan.onclick = function(){
     paintModal.style.display = "none"; 
 }
 
+//XLift modal
+var xliftModal = document.getElementById("xlift-modal"); 
+
+var xliftImg = document.getElementById("xlift-modal-img"); 
+var xliftModalImg = document.getElementById("xliftImg1"); 
+
+xliftImg.onclick = function(){
+    xliftModal.style.display = "block"; 
+    xliftModalImg.src = this.src; 
+}
+
+var xliftSpan = document.getElementsByClassName("close")[0]; 
+
+xliftSpan.onclick = function(){
+    xliftModal.style.display = "none"; 
+}
+
+//Table modal
+var tableModal = document.getElementById("table-modal"); 
+
+var tableImg = document.getElementById("table-modal-img"); 
+var tableModalImg = document.getElementById("tableImg1"); 
+
+tableImg.onclick = function(){
+    tableModal.style.display = "block"; 
+    tableModalImg.src = this.src; 
+}
+
+var tableSpan = document.getElementsByClassName("close")[0]; 
+
+tableSpan.onclick = function(){
+    tableModal.style.display = "none"; 
+}
+
+//Charlie modal
+var charlieModal = document.getElementById("charlie-modal"); 
+
+var charlieImg = document.getElementById("charlie-modal-img"); 
+var charlieModalImg = document.getElementById("charlieImg1"); 
+
+// charlieImg.onclick = function(){
+    // charlieModal.style.display = "block"; 
+//    charlieModalImg.src = this.src; 
+// }
+
+// var charlieSpan = document.getElementsByClassName("close")[0]; 
+
+// charlieSpan.onclick = function(){
+//     charlieModal.style.display = "none"; 
+// }
 
 
 
@@ -48,6 +98,9 @@ document.onkeydown = function(evt){
     if(isEscape){
         diceModal.style.display = "none"; 
         paintModal.style.display = "none"; 
+        xliftModal.style.display = "none"; 
+        tableModal.style.display = "none";
+        charlieModal.style.display = "none";
     }
 }
 
@@ -57,5 +110,14 @@ window.onclick = function(event){
     }
     if (event.target == paintModal){
         paintModal.style.display = "none"; 
+    }
+    if (event.target == xliftModal){
+        xliftModal.style.display = "none"; 
+    }
+    if (event.target == tableModal){
+        tableModal.style.display = "none"; 
+    }
+    if (event.target == charlieModal){
+        charlieModal.style.display = "none"; 
     }
 }
