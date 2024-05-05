@@ -3,6 +3,7 @@
     --text: #5AB0A7; 
     --menuSelCol: #001f94;
     --barColor: #006994; 
+    --footerColor: #c2b280; 
 }
 
 body {
@@ -61,4 +62,20 @@ h3 {
 .topnav a.split {
     float: right; 
     background-color: var(--menuSelCol); 
+}
+
+footer{
+    text-align: center; 
+    margin-top: 50px; 
+    background-color: var(--footerColor); 
+    padding: 1px; 
+    bottom: 0; 
+    height: 100px; 
+}
+
+footer p{
+    color: white; 
+    margin-top: 5px; 
+    margin-left: auto; 
+    margin-right: auto; 
 }
