@@ -1,8 +1,12 @@
 .modal{
     display: none; 
     position: fixed; 
+    overflow-y: scroll; 
+    /* position: absolute;  */
     z-index: 1; 
     padding-top: 100px; 
+    padding-bottom: 100px; 
+    margin-bottom: 100px; 
     left: 0; 
     top: 0; 
     width: 100%; 
@@ -17,8 +21,8 @@
     margin: auto; 
     /* display: block;  */
     display: inline;
-    width: 80%; 
-    max-width: 700px; 
+    width: 90%; 
+    /* max-width: 700px;  */
     text-wrap: wrap; 
 }
 
@@ -51,6 +55,7 @@
     height: 300px; 
 }
 
+
 .wide-pic{
     width: 533px; 
     height: 300px; 
@@ -58,6 +63,27 @@
 
 p{
     max-width: 300px; 
+    font-size: 20px; 
+}
+
+.modal-par{
+    color: white; 
+    margin-right: 40px; 
+    float: right; 
+    display: inline; 
+    text-wrap: wrap; 
+    text-align: left; 
+}
+
+/* gross solution but works for now... */
+.modal-par-l{
+    color: white; 
+    margin-left: 40px; 
+    float: left; 
+    display: inline; 
+    text-wrap: wrap; 
+    text-align: right; 
+    vertical-align: center; 
 }
 
 .modal-content img:hover{

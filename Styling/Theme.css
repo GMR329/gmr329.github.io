@@ -7,6 +7,9 @@
 }
 
 body {
+    margin: 0; 
+    width: 100%; 
+    height: 100%; 
     background-color: #F6E4AD; 
 }
 
@@ -65,11 +68,14 @@ h3 {
 }
 
 footer{
+    /* position: fixed;  */
     text-align: center; 
     margin-top: 50px; 
     background-color: var(--footerColor); 
-    padding: 1px; 
+    /* padding: 1px;  */
     bottom: 0; 
+    left: 0; 
+    width: 100%;
     height: 100px; 
 }
 
