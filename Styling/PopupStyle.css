@@ -21,7 +21,7 @@
     margin: auto; 
     /* display: block;  */
     display: inline;
-    width: 90%; 
+    /* width: 100%;  */
     /* max-width: 700px;  */
     text-wrap: wrap; 
 }
@@ -33,7 +33,7 @@
     right: auto; 
     margin: auto; 
     width: 80%; 
-    max-width: 700px; 
+    /* max-width: 700px;  */
     text-align: center; 
 }
 
@@ -51,8 +51,8 @@
 }
 
 .modal-row img{
-    width: 300px; 
-    height: 300px; 
+    width: 400px; 
+    height: 400px; 
 }
 
 
@@ -68,7 +68,7 @@ p{
 
 .modal-par{
     color: white; 
-    margin-right: 40px; 
+    margin-right: 5%; 
     float: right; 
     display: inline; 
     text-wrap: wrap; 
@@ -78,7 +78,7 @@ p{
 /* gross solution but works for now... */
 .modal-par-l{
     color: white; 
-    margin-left: 40px; 
+    margin-left: 5%; 
     float: left; 
     display: inline; 
     text-wrap: wrap; 
