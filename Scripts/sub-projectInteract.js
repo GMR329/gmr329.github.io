@@ -26,7 +26,7 @@ paintImg.onclick = function(){
     paintModalImg.src = this.src; 
 }
 
-var paintSpan = document.getElementsByClassName("close")[0]; 
+var paintSpan = document.getElementsByClassName("close")[1]; 
 
 paintSpan.onclick = function(){
     paintModal.style.display = "none"; 
@@ -43,7 +43,7 @@ xliftImg.onclick = function(){
     xliftModalImg.src = this.src; 
 }
 
-var xliftSpan = document.getElementsByClassName("close")[0]; 
+var xliftSpan = document.getElementsByClassName("close")[2]; 
 
 xliftSpan.onclick = function(){
     xliftModal.style.display = "none"; 
@@ -60,10 +60,27 @@ tableImg.onclick = function(){
     tableModalImg.src = this.src; 
 }
 
-var tableSpan = document.getElementsByClassName("close")[0]; 
+var tableSpan = document.getElementsByClassName("close")[3]; 
 
 tableSpan.onclick = function(){
     tableModal.style.display = "none"; 
+}
+
+//Conch modal
+var conchModal = document.getElementById("conch-modal"); 
+
+var conchImg = document.getElementById("conch-modal-img"); 
+var conchModalImg = document.getElementById("conchImg1"); 
+
+conchImg.onclick = function(){
+    conchModal.style.display = "block"; 
+    conchModalImg.src = this.src; 
+}
+
+var conchSpan = document.getElementsByClassName("close")[4]; 
+
+conchSpan.onclick = function(){
+    conchModal.style.display = "none"; 
 }
 
 //Charlie modal
@@ -73,8 +90,8 @@ var charlieImg = document.getElementById("charlie-modal-img");
 var charlieModalImg = document.getElementById("charlieImg1"); 
 
 // charlieImg.onclick = function(){
-    // charlieModal.style.display = "block"; 
-//    charlieModalImg.src = this.src; 
+//     charlieModal.style.display = "block"; 
+//     charlieModalImg.src = this.src; 
 // }
 
 // var charlieSpan = document.getElementsByClassName("close")[0]; 
@@ -100,6 +117,8 @@ document.onkeydown = function(evt){
         paintModal.style.display = "none"; 
         xliftModal.style.display = "none"; 
         tableModal.style.display = "none";
+        conchModal.style.display = "none"; 
+
         charlieModal.style.display = "none";
     }
 }
@@ -117,6 +136,10 @@ window.onclick = function(event){
     if (event.target == tableModal){
         tableModal.style.display = "none"; 
     }
+    if (event.target == conchModal){
+        conchModal.style.display = "none"; 
+    }
+
     if (event.target == charlieModal){
         charlieModal.style.display = "none"; 
     }

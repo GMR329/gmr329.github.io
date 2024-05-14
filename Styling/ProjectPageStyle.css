@@ -93,3 +93,7 @@ div.sub-projects {
     text-align: center; 
     /* margin-top: 0px;  */
 }
+
+.close{
+    cursor: pointer; 
+}
