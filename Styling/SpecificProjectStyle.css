@@ -41,3 +41,8 @@ li{
 h3{
     font-size: 22px; 
 }
+
+.horiz-med{
+    width:480px; 
+    height:270px; 
+}

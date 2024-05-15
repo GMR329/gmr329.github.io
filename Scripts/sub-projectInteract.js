@@ -84,10 +84,10 @@ conchSpan.onclick = function(){
 }
 
 //Charlie modal
-var charlieModal = document.getElementById("charlie-modal"); 
+// var charlieModal = document.getElementById("charlie-modal"); 
 
-var charlieImg = document.getElementById("charlie-modal-img"); 
-var charlieModalImg = document.getElementById("charlieImg1"); 
+// var charlieImg = document.getElementById("charlie-modal-img"); 
+// var charlieModalImg = document.getElementById("charlieImg1"); 
 
 // charlieImg.onclick = function(){
 //     charlieModal.style.display = "block"; 
@@ -98,6 +98,23 @@ var charlieModalImg = document.getElementById("charlieImg1");
 
 // charlieSpan.onclick = function(){
 //     charlieModal.style.display = "none"; 
+// }
+
+//lunar rover modal
+// var lunarRoveModal = document.getElementById("lunarRove-modal"); 
+
+// var lunarRoveImg = document.getElementById("lunarRove-modal-img"); 
+// var lunarRoveModalImg = document.getElementById("lunarRoveImg1"); 
+
+// lunarRoveImg.onclick = function(){
+//     lunarRoveModal.style.display = "block"; 
+//     lunarRoveModalImg.src = this.src; 
+// }
+
+// var lunarRoveSpan = document.getElementsByClassName("close")[6]; 
+
+// lunarRoveSpan.onclick = function(){
+//     lunarRoveModal.style.display = "none"; 
 // }
 
 
@@ -120,6 +137,7 @@ document.onkeydown = function(evt){
         conchModal.style.display = "none"; 
 
         charlieModal.style.display = "none";
+        lunarRoveModal.style.display = "none"; 
     }
 }
 
@@ -142,5 +160,8 @@ window.onclick = function(event){
 
     if (event.target == charlieModal){
         charlieModal.style.display = "none"; 
+    }
+    if (event.target == lunarRoveModal){
+        lunarRoveModal.style.display = "none"; 
     }
 }

@@ -19,32 +19,35 @@
 		<h1 class="proj-page-title">Pretty Handy Readily Erudite Automatic Door (PHREAD)</h1>
 
 		<!-- holds photos and videos horizontally -->
-		<!-- <div class="row-cont">
+		<div class="row-cont">
 			<div class="head-media">
-				<h3>Turret</h3>
-				<img class="vert-med" src="media/images/RubberTurret/RubberBandTurret.jpg">
-			</div>
-			<div class="head-media">
-				<h3>Turret Movement</h3>
+				<h3>Face Recognition</h3>
 				<video class="vert-med" width="270" height="480" controls loop autoplay muted>
-					<source src="media/images/RubberTurret/RubberTurretMove.mp4">
+					<source src="media/images/PHREAD/PHREADFaceRec.mp4">
 				</video>
 			</div>
 			<div class="head-media">
-				<h3>Turret Shooting</h3>
+				<h3>Door Hinge Articulate</h3>
 				<video class="vert-med" width="270" height="480" controls loop autoplay muted>
-					<source src="media/images/RubberTurret/RubberTurretShoot.mp4">
+					<source src="media/images/PHREAD/PHREADHinge.mp4">
 				</video>
 			</div>
-		</div> -->
+			<div class="head-media">
+				<h3>Door Hinge Prototype</h3>
+				<img class="vert-med" src="media/images/PHREAD/PHREADwoodHinge.jpg">
+			</div>
+		</div>
 
 		<h2>The Project:</h2>
-        <p>...</p>
+        <p>PHREAD spawned out of my Internet of Things class. It fundamentally uses a Python website to allow communication between a back end server and two ESP32s which are WiFi enabled. One ESP32 streams video which Python uses facial recognition on. When an authorized face is recognized, another signal is sent to a second ESP32 which turns a door handle. It also sends a signal to a servo motor which is supposed to operate a hinge to open and then close the door. Unfortunately, the servo was never strong enough to fully open and close the door, but can move it some distance before stalling. Information was passed in URLs to be used by Python Flask (a micro web framework). </p>
+		<p>This project was made for people who have an arm full of groceries, or just expect that doors can one day be smart enough to open and close automatically. It has a long way to go, but was amazing to see with all communications up and successful. </p>
 
 		<h2>At a Glance:</h2>
 		<ul>
-            <li>...</li>
-            <li>...</li>
+            <li>Used Python Flask micro web framework as communication backbone</li>
+            <li>Integrated facial recognition in Python on streamed video</li>
+			<li>Used Arduino IDE to program ESP32 WiFi modules to control IO of door motion</li>
+			<li>Designed hinge in Solidworks and cut on laser cutter</li>
 		</ul>
 
 		<footer>
