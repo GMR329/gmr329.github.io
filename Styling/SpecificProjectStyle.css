@@ -18,8 +18,20 @@
     text-align: center; 
 }
 
-.row-cont img{
+.row-cont .horiz-med{
+    width: 480px; 
+    height: 270px; 
+    border-radius: 15px; 
+}
+
+.row-cont .vert-med{
     width: 270px; 
+    height: 480px; 
+    border-radius: 15px; 
+}
+
+.row-cont .square{
+    width: 480px; 
     height: 480px; 
     border-radius: 15px; 
 }
