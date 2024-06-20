@@ -46,7 +46,28 @@
 			<li>Soldered Arduino shield consisting of pin headers, L293D DC Motor Driver ICs, and interconnect wires onto solder board for early prototype</li>
 			<li>Created modular design by making removable motor mounts and rail system to allow interchangeable parts and upgradability </li>
 			<li>Used NRF24L01 radio frequency module to allow for remote communication and control</li>
+			<li>Used RYLR998 LORA modules for communication after inconsistent NRF24L01 performance</li>
 		</ul>
+
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Front Wheels Remote Control Forward</h3>
+				<video class="horiz-med" controls loop autoplay muted>
+					<source src="media/images/RCcar/FrontWheelsRC.mp4">
+				</video>
+			</div>
+			<div class="head-media">
+				<h3>Sending Concatenation of Joystick Values</h3>
+				<img class="horiz-med" src="media/images/RCcar/MsgConcatCode.png">
+			</div>
+			<div class="head-media">
+				<h3>Unpacking String of Joystick Values</h3>
+				<img class="horiz-med" src="media/images/RCcar/MsgUnpackCode.png">
+			</div>
+		</div>
+
+		<h2>Little Victories - Sizable Failures:</h2>
+		<p>While I was originally using NRF24L01 modules for communication, they proved inconsistent in their performance. This led me to discover the long range radio, RYLR998. This seemed like a step up and while more difficult to get started with, it proved to be more reliable. However, it came with a heavy drawback: lower data transfer rates (my current assumption given tests) leading to a 1.5 second delay in messages to the car. This… isn’t ideal for an RC car. Although I had plans to do a fully DIY controller and receiver, I may switch to a ready made unit running an optimal RC protocol, or attempting the NRF24L01 approach again. An overhaul of the body is also in order and on the agenda. </p>
 
 		<footer>
 			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
