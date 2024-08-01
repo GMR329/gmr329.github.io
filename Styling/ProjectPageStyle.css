@@ -64,6 +64,7 @@ div.sub-projects {
     /* padding: 10%;  */
     padding-inline: 3%; 
     margin-top: 0px; 
+    vertical-align: top; 
 }
 /* .sub-projects.space-around{ */
     /* justify-content: space-around;  */
@@ -97,3 +98,5 @@ div.sub-projects {
 .close{
     cursor: pointer; 
 }
+
+
