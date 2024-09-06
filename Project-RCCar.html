@@ -69,6 +69,26 @@
 		<h2>Little Victories - Sizable Failures:</h2>
 		<p>While I was originally using NRF24L01 modules for communication, they proved inconsistent in their performance. This led me to discover the long range radio, RYLR998. This seemed like a step up and while more difficult to get started with, it proved to be more reliable. However, it came with a heavy drawback: lower data transfer rates (my current assumption given tests) leading to a 1.5 second delay in messages to the car. This… isn’t ideal for an RC car. Although I had plans to do a fully DIY controller and receiver, I may switch to a ready made unit running an optimal RC protocol, or attempting the NRF24L01 approach again. An overhaul of the body is also in order and on the agenda. </p>
 
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Full Remote Driving</h3>
+				<video class="vert-med" controls loop autoplay muted>
+					<source src="media/images/RCcar/WiFiCarDriving.mp4">
+				</video>
+			</div>
+			<div class="head-media">
+				<h3>Front View</h3>
+				<img class="vert-med" src="media/images/RCcar/WiFiCarFrontAngle.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Ugly Wiring View</h3>
+				<img class="vert-med" src="media/images/RCcar/WiFiCarBackView.jpg">
+			</div>
+		</div>
+
+		<h2>A New Approach</h2>
+		<p>I finally did a complete overhaul of my tool-chain. Gone are the Arduino and RF modules. The communication backbone is now WiFi with a client server model distributing information. My laptop and a Raspberry Pi both connect to a small GL-inet travel router. A server running on my laptop gets updated information from a controller client which uses the pyxboxcontroller library to get input from an Xbox One controller. It then sends this updated information when the car client sends a request message. Unfortunately, the turning shown above is not by design and is because of cheap motors. The communication protocol is set up and is sufficiently fast for remote control. My current limitations are now poor mechanical design and cheap motors. So this is essentially a complete success. </p>
+
 		<footer>
 			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
 			<P class="foot">LinkedIn: <a href="https://www.linkedin.com/in/garethrice23/">Gareth - LinkedIn</a></P>
