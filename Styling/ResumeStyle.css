@@ -1,0 +1,29 @@
+:root{
+    --text: #000000;
+}
+
+li{
+    margin-left: 60px; 
+    font-size: 20px; 
+}
+
+h2{
+    text-decoration-line: underline;
+}
+
+h3{
+    font-size: 22px; 
+}
+
+.resume{
+    color: var(--text);
+    padding-left: 20px; 
+}
+
+.heading{
+    text-align: center;
+}
+
+.section{
+    margin-bottom: 50px; 
+}
