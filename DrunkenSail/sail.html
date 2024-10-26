@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <!-- Start setting up html so I can interact with JS -->
+    <!-- Start by being able to add pirates -->
+    <!-- Then add to pirates code -->
+    <!-- Then draw various cards -->
+
+    <!-- Stretch: -->
+    <!-- Add favicon -->
+
+    <title>Drunken Sail</title>
+    <link rel="icon" type="images/x-icon" href="resources/ship.ico">
+
+    <link rel="stylesheet" href="styling/theme.css">
+
+    <script defer src="scripts/Gameplay.js"></script>
+</head>
+
+<body>
+    <div class="header" id="mainHeader">
+        <div class="headerStart" id="headerStartScreen">
+            <h1 class="mainText">Welcome to Drunken Sail!</h1>
+        </div>
+        <div class="headerPlay" id="headerPlayScreen">
+            <button class="bannerBtn" id="idBannerBtn">+/-</button>
+            <h1 class="nameBanner nameBanner0" id="idNameBanner0">Name 1</h1>
+            <h1 class="goldBanner goldBanner0" id="idGoldBanner0">27</h1>
+            <h1 class="nameBanner nameBanner1" id="idNameBanner1">Name 2</h1>
+            <h1 class="goldBanner goldBanner1" id="idGoldBanner1">27</h1>
+            <h1 class="nameBanner nameBanner2" id="idNameBanner2">Name 3</h1>
+            <h1 class="goldBanner goldBanner2" id="idGoldBanner2">27</h1>
+            <h1 class="nameBanner nameBanner3" id="idNameBanner3">Name 4</h1>
+            <h1 class="goldBanner goldBanner3" id="idGoldBanner3">27</h1>
+            <h1 class="nameBanner nameBanner4" id="idNameBanner4">Name 5</h1>
+            <h1 class="goldBanner goldBanner4" id="idGoldBanner4">27</h1>
+            <h1 class="nameBanner nameBanner5" id="idNameBanner5">Name 6</h1>
+            <h1 class="goldBanner goldBanner5" id="idGoldBanner5">27</h1>
+            <h1 class="nameBanner nameBanner6" id="idNameBanner6">Name 7</h1>
+            <h1 class="goldBanner goldBanner6" id="idGoldBanner6">27</h1>
+        </div>
+    </div>
+
+    <div class="fullPageSetup" id="setupFullDiv">
+        <div class="mainDiv topDiv" id="setupDivTop">
+            <h1 class="mainText">Add Mutinous Pirates</h1>
+        </div>
+
+        <div class="mainDiv middleDiv" id="setupDivMiddle">
+            <button class="button addButton" id="addBtn">+</button>
+            <button class="button dropButton" id="dropBtn">-</button>
+
+            <input type="text" id="pInput1" class="nameInput">
+            <input type="text" id="pInput2" class="nameInput">
+            <input type="text" id="pInput3" class="nameInput">
+            <input type="text" id="pInput4" class="nameInput">
+            <input type="text" id="pInput5" class="nameInput">
+            <input type="text" id="pInput6" class="nameInput">
+            <input type="text" id="pInput7" class="nameInput">
+        </div>
+
+        <div class="mainDiv bottomDiv" id="setupDivBottom">
+            <button class="button beginButton" id="beginBtn">Begin</button>
+        </div>
+    </div>
+
+
+    <div class = "fullPageDraw" id="drawFullDiv">
+        <div class="drawDiv topDrawDiv" id="drawDivTop">
+            <p class="mainText indicatorText" id="turnIndicator">This is a test</p>
+        </div>
+
+        <div class="drawDiv middleDrawDiv" id="drawDivMiddle">
+            <button class="actionButton" id="digBtn">DIG</button>
+            <button class="actionButton" id="plunderBtn">PLUNDER</button>
+        </div>
+
+        <div class="drawDiv bottomDrawDiv" id="drawDivBottom">
+            <h1 class="mainText">final test</h1>
+        </div>
+    </div>
+
+
+    <div class="fullPageCard" id="cardFullDiv">
+        <div class="cardBody">
+            <p class="cardTitle", id="drawCardTitle">Booga</p>
+            <p class="cardDesc", id="drawCardDesc">Ooga slkdfj sdlkfj sldjf sljfelijsdlf selfj sldkjf slejfldkjf lsiejisjdl fsleifjlsdkj fliesjflk sjilejf lsk</p>
+        </div>
+        <button class="continueBtn", id="setSailBtn">SAIL HOME</button>
+    </div>
+
+
+    <div class="pirateCode" id="pirateCodeDiv">
+        <div class="scrollSection" id="scrollSectionDiv">
+            <p class="pCode pCode1" id="pCodeDis0">A Pirate Always May Parlay</p>
+            <p class="pCode pCode2" id="pCodeDis1">A Pirate Always May Parlay</p>
+            <p class="pCode pCode3" id="pCodeDis2">A Pirate Always May Parlay</p>
+            <p class="pCode pCode4" id="pCodeDis3">A Pirate Always May Parlay</p>
+            <p class="pCode pCode5" id="pCodeDis4">A Pirate Always May Parlay</p>
+            <p class="pCode pCode6" id="pCodeDis5">A Pirate Always May Parlay</p>
+            <p class="pCode pCode7" id="pCodeDis6">A Pirate Always Drinks If They Disobey The Code</p>
+        </div>
+        <div class="scrollAddSection" id="scrollAddDiv">
+            <h1 class="mainText" id="pCodePrompt">Add to the code: A Pirate Always...</h1>
+            <input type="text" id="inputPirateCode" class="pirateCodeInput">
+            <button class="updateBtnCode", id="updateCodeBtn">UPDATE CODE</button>
+            <button class="continueBtnCode", id="codeSailBtn">SET SAIL</button>
+        </div>
+    </div>
+
+    <div class="winScreen" id="idWinScreen">
+        <h1 class="winBanner" id="idWinBanner">Winner</h1>
+        <p class="winText">(refresh to play again)</p>
+    </div>
+</body>
+</html>
+

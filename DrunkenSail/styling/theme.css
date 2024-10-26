@@ -1,0 +1,298 @@
+:root{
+    --mainText: #ffffff; 
+    --backgroundColor: #000000; /* og bg = 33ccff */
+}
+
+
+body{
+    /* margin: 1%;  */
+    background-color: var(--backgroundColor); 
+    width: 100%; 
+    height: 100%; 
+}
+
+
+
+/* --------------------------- HEADER --------------------------- */
+.header{
+    height:10%; 
+    width:100%; 
+}
+
+.headerStart{
+    position: fixed; 
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    justify-content:space-evenly; 
+}
+
+.headerPlay{
+    position: fixed; 
+    display: flex; 
+    width: 100%; 
+    height: 100%; 
+    justify-content:space-evenly; 
+}
+
+.nameBanner{
+    color: var(--mainText); 
+    font-size:32px; 
+}
+
+.goldBanner{
+    color: #daaf37; 
+    font-size:32px; 
+    cursor:pointer; 
+}
+
+.bannerBtn{
+    color: #fa1234; 
+    font-size:32px; 
+    cursor:pointer; 
+    height:8%; 
+}
+/* --------------------------- HEADER --------------------------- */
+
+
+
+/* --------------------------- SETUP PAGE --------------------------- */
+.fullPageSetup{
+    position:fixed; 
+    z-index: 9; 
+    width: 100%; 
+    height: 90%; 
+    margin-top: 5%; 
+}
+
+.mainDiv{
+    height: 33%; 
+}
+
+.middleDiv{
+    vertical-align: middle; 
+}
+
+.bottomDiv{
+    margin-top: 5%; 
+}
+/* --------------------------- SETUP PAGE --------------------------- */
+
+
+
+/* --------------------------- PIRATE CODE PAGE --------------------------- */
+.pirateCode{
+    position: fixed; 
+    display: flex; 
+    z-index: 9; 
+    width: 100%; 
+    height: 90%; 
+    margin-top: 5%; 
+
+    justify-content:space-evenly; 
+}
+
+.scrollSection{
+    width: 48%; 
+    height: 95%; 
+    background-color:#00ff99; 
+}
+
+.scrollAddSection{
+    height: 95%; 
+    width: 48%; 
+}
+
+.pCode{
+    font-size: 28px; 
+    color: #fa1234; 
+    font-family:Papyrus; 
+    font-weight: bolder; 
+}
+
+.continueBtnCode{
+    width:30%; 
+    height: 10%; 
+    margin-left: 60%; 
+    margin-top: 4%; 
+}
+
+.updateBtnCode{
+    width: 95%; 
+    height: 10%; 
+    margin-top: 1%; 
+
+    font-size: 32px; 
+    color: #fa1234; 
+    font-family:Papyrus; 
+}
+
+.pirateCodeInput{
+    height: 60%; 
+    width: 95%; 
+    background-color: #00ff99; 
+
+    font-size: 32px; 
+    color: #fa1234; 
+    font-family:Papyrus; 
+}
+/* --------------------------- PIRATE CODE PAGE --------------------------- */
+
+
+
+/* --------------------------- CARD PAGE --------------------------- */
+.fullPageCard{
+    position: fixed; 
+    margin-top: 5%; 
+
+    z-index: 9; 
+    width: 100%; 
+    height: 90%; 
+}
+
+.cardBody{
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-bottom:3%; 
+    width: 80%; 
+    height: 70%; 
+    background-color:#00ff99; 
+    border-width:4px; 
+    border-radius:100px; 
+}
+
+.cardTitle{
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align:center; 
+    width:90%; 
+    font-size: 32px;
+    color: #fa1234; 
+}
+
+.cardDesc{
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align:center; 
+    width:90%; 
+    font-size: 32px; 
+    color: #fa1234; 
+}
+
+.continueBtn{
+    width:30%; 
+    height: 10%; 
+    margin-left: 60%; 
+}
+
+/* --------------------------- CARD PAGE --------------------------- */
+
+
+
+/* --------------------------- DRAW CARD PAGE --------------------------- */
+.fullPageDraw{
+    position:fixed; 
+    z-index: 1; 
+    width: 100%; 
+    height: 90%; 
+    margin-top: 5%; 
+}
+
+.indicatorText{
+    font-size: 32px; 
+}
+
+.topDrawDiv{
+    display: flex; 
+    height: 10%; 
+    width: 100%; 
+    justify-content: space-evenly; 
+}
+
+.middleDrawDiv{
+    display: flex; 
+    height: 70%; 
+    width: 100%; 
+    align-items:center; 
+    justify-content: space-around; 
+}
+
+.bottomDrawDiv{
+    height: 20%; 
+}
+
+.actionButton{
+    height: 80%; 
+    width: 40%; 
+    background-color: #123456; 
+    border-radius: 100px; 
+
+    font-size: 600%; 
+    font-family:Papyrus; 
+    vertical-align:text-top; 
+    cursor: pointer; 
+}
+/* --------------------------- DRAW CARD PAGE --------------------------- */
+
+
+/* --------------------------- WIN SCREEN --------------------------- */
+.winScreen{
+    position: fixed; 
+    z-index: 9; 
+    width: 100%; 
+    height: 100%; 
+    background-color: #123456; 
+}
+
+.winBanner{
+    font-size: 64px; 
+    color: #fa1234; 
+    font-family: Papyrus; 
+}
+
+.winText{
+    font-size: 32px; 
+    color: #fa1234; 
+    font-family: Papyrus; 
+}
+/* --------------------------- WIN SCREEN --------------------------- */
+
+
+.mainText{
+    color: var(--mainText); 
+}
+
+
+.nameInput{
+    height: 20%; 
+    width: 7%; 
+    background-color: #00ff99; 
+
+    font-size: 20px; 
+    color: #fa1234; 
+    font-family:Papyrus; 
+}
+
+
+.button{
+    border: none; 
+    height: 30%; 
+    width: 10%; 
+    background-color: #123456; 
+
+    color: #fa1234; 
+    text-align: center; 
+    font-size: 250%; 
+    cursor: pointer;
+    font-family:Papyrus; 
+}
+
+.button:hover{
+    background-color: #111111; 
+}
+
+
+.beginButton{
+    position: relative; 
+    margin-bottom: 0; 
+}
