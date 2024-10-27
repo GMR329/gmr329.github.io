@@ -56,6 +56,11 @@ a.fill-div {
     text-align: center; 
 }
 
+div.minor-projects{
+    display: flex; 
+    justify-content: space-around; 
+}
+
 /* Sub projects should be side by side and expanding down */
 div.sub-projects {
     display: inline-block; 
@@ -65,6 +70,7 @@ div.sub-projects {
     padding-inline: 3%; 
     margin-top: 0px; 
     vertical-align: top; 
+    /* justify-content: space-around;  */
 }
 
 /* .sub-projects.space-around{ */
