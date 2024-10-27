@@ -24,11 +24,10 @@ font-weight: bold;
 /* This houses all project flex stuff */
 div.scroll-container {
   background-color: #FAF2C3;
-  overflow: auto;
-  /* overflow-x: auto;  */
-  white-space: nowrap;
+  display: flex; 
   padding: 10px;
-  direction: horizontal; 
+  flex-wrap: wrap; 
+  justify-content: space-around; 
 }
 
 /* Scroll container holds main project image and text */
