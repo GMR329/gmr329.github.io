@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GR Portfolio</title>
+		<!-- this is favicon -- see favicon.cc  -->
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+		<link rel="stylesheet" href="../Styling/Theme.css"> 
+		<link rel="stylesheet" href="../Styling/SpecificProjectStyle.css">
+	</head>
+	<body>
+		<!-- nav bar info -->
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="../ProjectPage.html">Projects</a>
+			<a href="../Resume.html">Resume</a>
+			<a href="../About.html" class="split">About</a>
+		</div>
+
+		<h1 class="proj-page-title">Robot Arm</h1>
+
+		<!-- holds photos and videos horizontally -->
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Full System</h3>
+				<img class="vert-med" src="../media/images/RobotArm/RobotArmSystem.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Object Manipulation</h3>
+				<video class="vert-med" controls loop autoplay muted>
+					<source src="../media/images/RobotArm/RobotArmQueen.mp4">
+				</video>
+			</div>
+			<div class="head-media">
+				<h3>A Flower For You (x2 speed)</h3>
+				<video class="vert-med" controls loop autoplay muted>
+					<source src="../media/images/RobotArm/RobotArmFlower.mp4">
+				</video>
+			</div>
+		</div>
+
+		<h2>The Project:</h2>
+		<p>It was starting to feel like everybody cool had a robotic arm and I was beginning to feel left out. So, like Hephaestus forging his automatons, I sat down in my swivel chair with my chicken nuggies and got to work. I designed the entire arm in Solidworks, printing test fit pieces as I went. I then wired in the 5 servo motors, only 2 of which actually worked (unbeknownst to me at the time)! It then took me a few days to program a simple control scheme and iron out the servo jitter and power distribution (the robot uses a bench power supply to ensure a steady ~6 volts). </p>
+		<p>While bug eradication and ensuring stable systems communication absolutely took up a fair amount of time, I’m proud to say there were no catastrophic failures (no fires, broken parts, or excessive tears shed) apart from the 3 kaput motors (which were definitely like that when I found them). Now the world is at my 2 plastic robotic fingertips, and I’m ready to take on any task provided it’s within about 8 inches of the base of the arm, and I have several orders of magnitude more time to waste on said task. I hope to keep iterating on this project and see what it can do! </p>
+
+		<h2>At a Glance:</h2>
+		<ul>
+			<li>Designed arm in Solidworks and printed with personal 3D printer</li>
+			<li>Utilized Python to implement a client/server model to communicate from controller to arm</li>
+			<li>Used pyxboxcontroller library to take input from controller</li>
+			<li>Used socket programming to send information to Raspberry Pi 4</li>
+			<li>Used gpiozero and pigpio to signal servo motors to move based on input </li>
+		</ul>
+
+		<footer>
+			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
+			<P class="foot">LinkedIn: <a href="https://www.linkedin.com/in/garethrice23/">Gareth - LinkedIn</a></P>
+		</footer>
+
+	</body>
+</html>
