@@ -7,6 +7,8 @@
     <!-- Then add to pirates code -->
     <!-- Then draw various cards -->
 
+    <!-- EVENTUALLY: Add button tag back to all buttons ONLY for hover purposes?  -->
+
     <!-- Stretch: -->
     <!-- Add favicon -->
 
@@ -21,10 +23,10 @@
 <body>
     <div class="header" id="mainHeader">
         <div class="headerStart" id="headerStartScreen">
-            <h1 class="mainText">Welcome to Drunken Sail!</h1>
+            <h1 class="headerText">Welcome to Drunken Sail!</h1>
         </div>
         <div class="headerPlay" id="headerPlayScreen">
-            <button class="bannerBtn" id="idBannerBtn">+/-</button>
+            <button class="bannerBtn button" id="idBannerBtn">+/-</button>
             <h1 class="nameBanner nameBanner0" id="idNameBanner0">Name 1</h1>
             <h1 class="goldBanner goldBanner0" id="idGoldBanner0">27</h1>
             <h1 class="nameBanner nameBanner1" id="idNameBanner1">Name 2</h1>
@@ -44,24 +46,35 @@
 
     <div class="fullPageSetup" id="setupFullDiv">
         <div class="mainDiv topDiv" id="setupDivTop">
-            <h1 class="mainText">Add Mutinous Pirates</h1>
+            <h1 class="setupPrompt">Add Mutinous Pirates</h1>
         </div>
 
         <div class="mainDiv middleDiv" id="setupDivMiddle">
-            <button class="button addButton" id="addBtn">+</button>
-            <button class="button dropButton" id="dropBtn">-</button>
-
-            <input type="text" id="pInput1" class="nameInput">
-            <input type="text" id="pInput2" class="nameInput">
-            <input type="text" id="pInput3" class="nameInput">
-            <input type="text" id="pInput4" class="nameInput">
-            <input type="text" id="pInput5" class="nameInput">
-            <input type="text" id="pInput6" class="nameInput">
-            <input type="text" id="pInput7" class="nameInput">
+            <div class="nameInputTop">
+                <input type="text" id="pInput1" class="nameInput inputText">
+            </div>
+            <div class="nameInputMiddle">
+                <div class="nameInputMiddleLeft">
+                    <div class="nameInputDiv"><input type="text" id="pInput2" class="nameInputMid inputText"></div>
+                    <div class="nameInputDiv"><input type="text" id="pInput4" class="nameInputMid inputText"></div>
+                </div>
+                <div class="nameInputMiddleMiddle">
+                    <button class="addButton addDropBtn" id="addBtn">+</button>
+                    <button class="dropButton addDropBtn" id="dropBtn">-</button>
+                </div>
+                <div class="nameInputMiddleRight">
+                    <div class="nameInputDiv"><input type="text" id="pInput3" class="nameInputMid inputText"></div>
+                    <div class="nameInputDiv"><input type="text" id="pInput5" class="nameInputMid inputText"></div>
+                </div>
+            </div>
+            <div class="nameInputBottom">
+                <input type="text" id="pInput6" class="nameInput inputText">
+                <input type="text" id="pInput7" class="nameInput inputText">
+            </div>
         </div>
 
         <div class="mainDiv bottomDiv" id="setupDivBottom">
-            <button class="button beginButton" id="beginBtn">Begin</button>
+            <button class="beginButton" id="beginBtn">Mutiny!!</button>
         </div>
     </div>
 
@@ -75,10 +88,6 @@
             <button class="actionButton" id="digBtn">DIG</button>
             <button class="actionButton" id="plunderBtn">PLUNDER</button>
         </div>
-
-        <div class="drawDiv bottomDrawDiv" id="drawDivBottom">
-            <h1 class="mainText">final test</h1>
-        </div>
     </div>
 
 
@@ -87,7 +96,7 @@
             <p class="cardTitle", id="drawCardTitle">Booga</p>
             <p class="cardDesc", id="drawCardDesc">Ooga slkdfj sdlkfj sldjf sljfelijsdlf selfj sldkjf slejfldkjf lsiejisjdl fsleifjlsdkj fliesjflk sjilejf lsk</p>
         </div>
-        <button class="continueBtn", id="setSailBtn">SAIL HOME</button>
+        <button class="continueBtn button", id="setSailBtn">SAIL HOME</button>
     </div>
 
 
@@ -102,10 +111,13 @@
             <p class="pCode pCode7" id="pCodeDis6">A Pirate Always Drinks If They Disobey The Code</p>
         </div>
         <div class="scrollAddSection" id="scrollAddDiv">
-            <h1 class="mainText" id="pCodePrompt">Add to the code: A Pirate Always...</h1>
+            <h1 class="pCodePromptTxt" id="pCodePrompt">Add to the code: A Pirate Always...</h1>
             <input type="text" id="inputPirateCode" class="pirateCodeInput">
-            <button class="updateBtnCode", id="updateCodeBtn">UPDATE CODE</button>
-            <button class="continueBtnCode", id="codeSailBtn">SET SAIL</button>
+            <div class="updateCodeBtns" id="updateCodeBtnsDiv">
+                <button class="inspireBtnCode button", id="inspireCodeBtn">INSPIRATION</button>
+                <button class="updateBtnCode button", id="updateCodeBtn">UPDATE CODE</button>
+            </div>
+            <button class="continueBtnCode button", id="codeSailBtn">SET SAIL</button>
         </div>
     </div>
 

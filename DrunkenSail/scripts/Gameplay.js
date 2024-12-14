@@ -93,31 +93,32 @@ class GameState{
     // or at the very least a damn file!
     // And use the Card class. 
     digDeckData = [
-        ["Oracle Stone!", "You dig up a glowing blue stone and gain a special power. When you ask a question, whoever answers it with a statement must drink. You are the master of questions. The pirate question master."],
-        ["I Thought YOU Brough the Spade", "You forgot the shovel. Drink 3 times while you wait for the crew."],
-        ["Rum Cask", "Not exactly conventional treasure, but hey! Rum! Take 2 shots"],
-        ["Big Booty", "Get your mind outta the gutter! You found treasure! Gain 5 gold and drink 1 time."],
-        ["Tiny Booty", "You found a little treasure! Gain 3 gold and drink 2 times."],
-        ["Golden Idol", "The golden idol looks exactly like you... wierd. Gain 3 gold and drink 3 times to settle your unease."],
-        ["Coconut", "Turns out, X doesn't mark the spot. But hey! Coconuts. Drink 3 times."],
-        ["Programmer Fatigue", "Just... drink 4 times. I have so many more of these to write. Drink 1 more time because it's 1 am and I'm power tripping!"],
+        ["Oracle Stone!", "You dig up a glowing blue stone and gain a special power. When you ask a question, whoever answers it with a statement must drink. You are the master of questions. The pirate question master. Take 3 gold."],
+        ["I Thought YOU Brough the Spade", "You forgot the shovel, but found 2 gold in the sand. Take 2 gold and drink 3 times while you wait for the crew."],
+        ["Rum Cask", "Not exactly conventional treasure, but hey! Rum! Take 2 shots and gain 2 gold (from the bottle returns)."],
+        ["Big Booty", "Get your mind outta the gutter! You found treasure! Gain 8 gold and drink 1 time."],
+        ["Tiny Booty", "You found a little treasure! Gain 6 gold and drink 2 times."],
+        ["Golden Idol", "The golden idol looks exactly like you... wierd. Gain 5 gold and drink 3 times to settle your unease."],
+        ["Coconut", "Turns out, X doesn't mark the spot. But hey! Coconuts. Drink 3 times and gain 1 gold."],
+        ["Programmer Fatigue", "Just... drink 4 times. I have so many more of these to write. Drink 1 more time because it's 1 am and I'm power tripping! Take 2 gold and thank me for my generosity."],
         ["Message in a Bottle", "\"We've been trying to reach you regarding your ships extended warranty.\" Drink 2 times."],
-        ["VooDoo Dolls", "What a treasure indeed! Divide 4 drinks among the crew however you wish."]
+        ["VooDoo Dolls", "What a treasure indeed! Divide 4 drinks among the crew however you wish."],
+        ["Native Artifact", "You found a long lost native artifact! The British museum would love it! Take 7 gold and drink 2 times."]
     ];
     digDeckMaxIdx = this.digDeckData.length; 
 
     plunderDeckData = [
-        ["Pirates In Arms", "You plundered bravely with a pirate of your choice. They become your first mate. When you drink, so do they. Also, drink!"],
-        ["A Mere Pittance", "You broke into the richest house in the city. And found very little. Gain 1 gold and drink 2 times to drown the disappointment."],
-        ["You Can't Rob Children!", "You shook down someone much younger than you thought. Gain no gold. Drink 1 time."],
-        ["Not the Castle!", "You're drunk. You're not robbing the castle. Drink 2 times and forget about it."],
-        ["Fuck It! Rob the Castle!", "There were remarkably few guards. You found the wine stores and the treasury. Gain 4 gold and drink 1 time."],
-        ["Rob the Bar!", "Money and booze. What could go wrong? Drink 3 times. Gain 3 gold."],
-        ["...Because We're Pirates", "Take 2 gold from a player of your choice. Then drink 1 time in shame, you monster."],
-        ["Blackout!", "You drank too much, passed out, and your pocket was picked. Lose 2 gold (if you have it)"],
-        ["Wet Gunpowder", "Your gun couldn't fire and you only pushed the bluff so far. Gain 1 gold and drink 1 time in relief it worked at all."],
-        ["Remarkable Bullshit!", "As drunk as you are, you looked terrifying and robbed the town square. Gain 3 gold and drink 1 time."],
-        ["He Has a Shotgun?", "Pick a partner to shotgun any drink with you. If no one agrees, or you don't want to, drink twice. Otherwise, you gain 3 gold and your partner gains 2."]
+        ["Pirates In Arms", "You plundered bravely with a pirate of your choice. They become your first mate. When you drink, so do they. Also, drink and gain 3 gold!"],
+        ["A Mere Pittance", "You broke into the richest house in the city. And found relatively little (according to rich people). Gain 4 gold and drink 2 times to drown the disappointment."],
+        ["You Can't Rob Children!", "You shook down someone much younger than you thought. Gain 3 gold. Drink 3 times... monster."],
+        ["Not the Castle!", "You're drunk. You're not robbing the castle. But take 2 gold you found in the drain and drink 2 times and forget about it."],
+        ["Fuck It! Rob the Castle!", "There were remarkably few guards. You found the wine stores and the treasury. Gain 6 gold and drink 3 times."],
+        ["Rob the Bar!", "Money and booze. What could go wrong? Drink 3 times. Gain 4 gold."],
+        ["...Because We're Pirates", "Take 2 gold from a player of your choice. Then drink 1 time in shame."],
+        ["Blackout!", "You drank too much, passed out, and your pocket was picked. Lose 1 gold (if you have it)"],
+        ["Wet Gunpowder", "Your gun couldn't fire and you only pushed the bluff so far. Gain 3 gold and drink 1 time in relief it worked at all."],
+        ["Remarkable Bullshit!", "As drunk as you are, you looked terrifying and robbed the town square. Gain 5 gold and drink 1 time."],
+        ["He Has a Shotgun?", "Pick a partner to shotgun any drink with you. If no one agrees, or you don't want to, gain 2 gold and drink twice. Otherwise, you gain 4 gold and your partner gains 2."]
     ];
     plunderDeckMaxIdx = this.plunderDeckData.length; 
 
@@ -142,11 +143,22 @@ class GameState{
     ];
     seaDeckMaxIdx = this.seaDeckData.length; 
 
+    pirateCodeDeckData = [
+        "speaks in their best pirate voice",
+        "makes a toast on their turn",
+        "drinks with pinkies up",
+        "never touches their face",
+        "never touches their mobile communication device"
+    ];
+    pirateCodeDeckMaxIdx = this.pirateCodeDeckData.length; 
+
 
     constructor(){
         //get drawn card areas to update later
         this.cardTitle = document.getElementById("drawCardTitle"); 
         this.cardDesc = document.getElementById("drawCardDesc"); 
+        
+        this.codeAdder = document.getElementById("inputPirateCode"); 
 
         //can shuffle deck every time (current) or choose randomly based on prob
         this.shuffleDeck(this.seaDeckData); 
@@ -155,6 +167,8 @@ class GameState{
         this.digDeckIdx = 0; 
         this.shuffleDeck(this.plunderDeckData); 
         this.plunderDeckIdx = 0; 
+        this.shuffleDeck(this.pirateCodeDeckData); 
+        this.pirateCodeDeckIdx = 0; 
 
         this.pirateCode = []; 
         this.pirateCodeIdx = 1; 
@@ -261,6 +275,16 @@ class GameState{
         this.cardTitle.textContent = this.plunderDeckData[this.plunderDeckIdx][0]; 
         this.cardDesc.textContent = this.plunderDeckData[this.plunderDeckIdx][1]; 
         this.plunderDeckIdx++; 
+    }
+
+    drawPirateCodeDeck(){
+        if(this.pirateCodeDeckIdx >= this.pirateCodeDeckMaxIdx){
+            this.shuffleDeck(this.pirateCodeDeckData); 
+            this.pirateCodeDeckIdx = 0; 
+        }
+        this.codeAdder.value = this.pirateCodeDeckData[this.pirateCodeDeckIdx]; 
+        this.pirateCodeDeckIdx++; 
+
     }
 
     testMethod(){
@@ -483,6 +507,17 @@ beginBtn.onclick = function(){
 
 
 /**
+ * inspireCodeBtn:
+ * grabs a random, pre written pirate code rule to inspire players
+ */
+const inspireCodeBtn = document.getElementById("inspireCodeBtn"); 
+inspireCodeBtn.onclick = function(){
+    console.log("Inside inspireCodeBtn function"); 
+    theGame.drawPirateCodeDeck(); 
+}
+
+
+/**
  * updateCodeBtn: 
  * updates the code
  */
@@ -572,7 +607,7 @@ goldAddBtn.onclick = function(){
         if(addFlag){
             goldColor.style.color = '#daaf37'; 
         }else{
-            goldColor.style.color = '#0000ff'; 
+            goldColor.style.color = '#ff0000'; 
         }
     }
 }

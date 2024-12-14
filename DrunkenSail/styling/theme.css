@@ -1,8 +1,20 @@
 :root{
-    --mainText: #ffffff; 
     --backgroundColor: #000000; /* og bg = 33ccff */
+    --bgColB: #00ff99; 
+    --bgColC: #e0c9a6; 
+
+    --bgBtnA: #ba8c63; 
+    --bgBtnB: #123456; 
+    --bgBtnHovA: #111111; 
+    --txtBtnA: #414141; 
+
+    --mainText: #ffffff; 
+    --textColB: #fa1234; 
+    --textColC: #000000; 
+    --fontA: Papyrus; 
 }
 
+/* MAYBE: Split up theme into multiple files. Kinda messy right now? */
 
 body{
     /* margin: 1%;  */
@@ -11,12 +23,11 @@ body{
     height: 100%; 
 }
 
-
-
 /* --------------------------- HEADER --------------------------- */
 .header{
     height:10%; 
     width:100%; 
+    margin-top:0%; 
 }
 
 .headerStart{
@@ -35,9 +46,17 @@ body{
     justify-content:space-evenly; 
 }
 
+.headerText{
+    color: var(--mainText); 
+    font-size: 34px; 
+    font-weight: bolder; 
+    font-family: var(--fontA); 
+}
+
 .nameBanner{
     color: var(--mainText); 
     font-size:32px; 
+    font-family: var(--fontA); 
 }
 
 .goldBanner{
@@ -47,10 +66,14 @@ body{
 }
 
 .bannerBtn{
-    color: #fa1234; 
-    font-size:32px; 
+    border:none;
+    color: var(--txtBtnA); 
+    background-color:var(--bgBtnA); 
+    font-size:26px; 
+    font-weight:bolder; 
     cursor:pointer; 
     height:8%; 
+    width:4%; 
 }
 /* --------------------------- HEADER --------------------------- */
 
@@ -65,16 +88,140 @@ body{
     margin-top: 5%; 
 }
 
+.setupPrompt{
+    font-family: var(--fontA);   
+    color: var(--mainText); 
+    font-size: 24px; 
+}
+
 .mainDiv{
-    height: 33%; 
+    /* height: 33%;  */
+}
+
+.topDiv{
+    display: flex; 
+    height: 10%; 
+    vertical-align:middle; 
+
+    justify-content: space-evenly; 
 }
 
 .middleDiv{
+    height: 60%; 
+    width: 100%; 
     vertical-align: middle; 
 }
 
 .bottomDiv{
-    margin-top: 5%; 
+    height: 20%; 
+    width: 100%; 
+    margin-top:5%; 
+    display:flex; 
+    justify-content:space-evenly; 
+}
+
+.inputText{
+    font-weight: bold; 
+    background-color: var(--bgColC); 
+    font-size: 34px; 
+    color: var(--textColC); 
+    font-family: var(--fontA);
+}
+
+.nameInput{
+    width: 25%; 
+    height: 50%; 
+}
+
+.nameInputMid{
+    width: 75%; 
+    height: 50%; 
+}
+
+.nameInputTop{
+    height: 25%; 
+    width: 100%; 
+    display: flex; 
+    justify-content:space-evenly; 
+}
+
+.nameInputMiddle{
+    height: 50%; 
+    width: 100%; 
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
+.nameInputMiddleLeft{
+    height:100%; 
+    width:33%; 
+}
+
+.nameInputMiddleMiddle{
+    display:flex; 
+    height:100%; 
+    width:33%; 
+    justify-content:space-evenly; 
+    vertical-align:middle; 
+}
+
+.nameInputMiddleRight{
+    height:100%; 
+    width:33%; 
+}
+
+.nameInputDiv{
+    width: 100%; 
+    height: 50%; 
+    margin-left: 11%; 
+}
+
+.nameInputBottom{
+    height: 25%; 
+    width: 100%; 
+    display:flex; 
+    justify-content: space-evenly; 
+}
+
+.addDropBtn{
+    border: none; 
+    height: 50%; 
+    width: 25%; 
+    background-color: var(--bgBtnA); 
+
+    color: var(--txtBtnA); 
+    text-align: center; 
+    font-weight:bolder; 
+    font-size: 350%; 
+    cursor: pointer;
+    /* font-family:var(--fontA);  */ /*ask what looks better*/
+}
+
+/* Abstract this out into button class once I fix all other buttons! */
+.addDropBtn:hover{
+    background-color: #111111; 
+}
+
+.beginButton{
+    position: relative; 
+    margin-bottom: 0; 
+
+    border: none; 
+    height: 70%; 
+    width: 50%; 
+    background-color: var(--bgBtnA); 
+
+    font-weight:bolder; 
+    color: var(--txtBtnA);
+    text-align: center; 
+    font-size: 400%; 
+    cursor: pointer;
+    font-family: var(--fontA); 
+}
+
+/* Abstract this out into button class once I fix all other buttons! */
+.beginButton:hover{
+    background-color: #111111; 
 }
 /* --------------------------- SETUP PAGE --------------------------- */
 
@@ -95,7 +242,7 @@ body{
 .scrollSection{
     width: 48%; 
     height: 95%; 
-    background-color:#00ff99; 
+    background-color: var(--bgColC); 
 }
 
 .scrollAddSection{
@@ -103,11 +250,30 @@ body{
     width: 48%; 
 }
 
+.scrollAddSection:hover{
+    caret-color:#000000; 
+}
+
+.pCodePromptTxt{
+    color:var(--mainText); 
+    font-size:30px; 
+    font-family:var(--fontA); 
+}
+
+.updateCodeBtns{
+    width: 95%; 
+    height: 10%; 
+    margin-top: 1%; 
+
+    display: flex; 
+    justify-content: space-evenly; 
+}
+
 .pCode{
     font-size: 28px; 
-    color: #fa1234; 
-    font-family:Papyrus; 
     font-weight: bolder; 
+    color: var(--textColC); 
+    font-family: var(--fontA); 
 }
 
 .continueBtnCode{
@@ -115,26 +281,51 @@ body{
     height: 10%; 
     margin-left: 60%; 
     margin-top: 4%; 
+
+    background-color:var(--bgBtnA); 
+    border:none; 
+    font-size:30px; 
+    color:var(--txtBtnA); 
+    font-family:var(--fontA); 
+    text-align:center; 
+    font-weight:bold; 
+    cursor:pointer; 
 }
 
 .updateBtnCode{
-    width: 95%; 
-    height: 10%; 
-    margin-top: 1%; 
+    border:none; 
+    width: 48%; 
+    background-color: var(--bgBtnA); 
 
-    font-size: 32px; 
-    color: #fa1234; 
-    font-family:Papyrus; 
+    font-size: 30px; 
+    color: var(--txtBtnA); 
+    font-family: var(--fontA); 
+    text-align:center; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.inspireBtnCode{
+    width: 48%; 
+
+    background-color:var(--bgBtnA); 
+    border:none; 
+    font-size:30px; 
+    color:var(--txtBtnA); 
+    font-family:var(--fontA); 
+    text-align:center; 
+    font-weight:bold; 
+    cursor:pointer; 
 }
 
 .pirateCodeInput{
     height: 60%; 
     width: 95%; 
-    background-color: #00ff99; 
+    background-color: var(--bgColC); 
 
     font-size: 32px; 
-    color: #fa1234; 
-    font-family:Papyrus; 
+    color: var(--textColC); 
+    font-family: var(--fontA); 
 }
 /* --------------------------- PIRATE CODE PAGE --------------------------- */
 
@@ -156,7 +347,7 @@ body{
     margin-bottom:3%; 
     width: 80%; 
     height: 70%; 
-    background-color:#00ff99; 
+    background-color:var(--bgColC); 
     border-width:4px; 
     border-radius:100px; 
 }
@@ -167,7 +358,7 @@ body{
     text-align:center; 
     width:90%; 
     font-size: 32px;
-    color: #fa1234; 
+    color: var(--textColC); 
 }
 
 .cardDesc{
@@ -176,13 +367,22 @@ body{
     text-align:center; 
     width:90%; 
     font-size: 32px; 
-    color: #fa1234; 
+    color: var(--textColC); 
 }
 
 .continueBtn{
     width:30%; 
     height: 10%; 
     margin-left: 60%; 
+
+    background-color:var(--bgBtnA); 
+    border:none; 
+    font-size:30px; 
+    color:var(--txtBtnA); 
+    font-family:var(--fontA); 
+    text-align:center; 
+    font-weight:bold; 
+    cursor:pointer; 
 }
 
 /* --------------------------- CARD PAGE --------------------------- */
@@ -199,7 +399,9 @@ body{
 }
 
 .indicatorText{
+    color:var(--mainText); 
     font-size: 32px; 
+    font-family:var(--fontA); 
 }
 
 .topDrawDiv{
@@ -211,24 +413,20 @@ body{
 
 .middleDrawDiv{
     display: flex; 
-    height: 70%; 
+    height: 90%; 
     width: 100%; 
     align-items:center; 
     justify-content: space-around; 
 }
 
-.bottomDrawDiv{
-    height: 20%; 
-}
-
 .actionButton{
     height: 80%; 
     width: 40%; 
-    background-color: #123456; 
+    background-color: var(--bgBtnB); 
     border-radius: 100px; 
 
     font-size: 600%; 
-    font-family:Papyrus; 
+    font-family:var(--fontA);  
     vertical-align:text-top; 
     cursor: pointer; 
 }
@@ -241,58 +439,33 @@ body{
     z-index: 9; 
     width: 100%; 
     height: 100%; 
-    background-color: #123456; 
+    background-color: var(--backgroundColor); 
 }
 
 .winBanner{
+    display: flex; 
+    justify-content: space-evenly; 
     font-size: 64px; 
-    color: #fa1234; 
-    font-family: Papyrus; 
+    color: var(--mainText); 
+    font-family: var(--fontA); 
+
 }
 
 .winText{
+    display: flex; 
+    justify-content: space-evenly; 
     font-size: 32px; 
-    color: #fa1234; 
-    font-family: Papyrus; 
+    color: var(--mainText); 
+    font-family: var(--fontA); 
 }
 /* --------------------------- WIN SCREEN --------------------------- */
 
-
-.mainText{
+/* .mainText{
     color: var(--mainText); 
-}
-
-
-.nameInput{
-    height: 20%; 
-    width: 7%; 
-    background-color: #00ff99; 
-
-    font-size: 20px; 
-    color: #fa1234; 
-    font-family:Papyrus; 
-}
-
-
-.button{
-    border: none; 
-    height: 30%; 
-    width: 10%; 
-    background-color: #123456; 
-
-    color: #fa1234; 
-    text-align: center; 
-    font-size: 250%; 
-    cursor: pointer;
-    font-family:Papyrus; 
-}
+} */
 
 .button:hover{
-    background-color: #111111; 
+    background-color: var(--bgBtnHovA); 
 }
 
 
-.beginButton{
-    position: relative; 
-    margin-bottom: 0; 
-}
