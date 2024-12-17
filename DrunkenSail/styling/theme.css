@@ -23,8 +23,40 @@ body{
     height: 100%; 
 }
 
+
+/* --------------------------- INFO PAGE --------------------------- */
+.infoPage{
+    position:fixed; 
+    display:flex; 
+    justify-content:space-evenly; 
+    height:90%; 
+    width:100%; 
+    margin-top:5%; 
+    background-color:var(--bgColC); 
+    z-index:1; 
+}
+
+.infoPage1{
+    width:30%;
+}
+
+.infoPage2{
+    width:30%;
+}
+
+.infoPage3{
+    width:30%; 
+}
+
+.infoTxt{
+    font-size:17px;
+}
+/* --------------------------- INFO PAGE --------------------------- */
+
+
 /* --------------------------- HEADER --------------------------- */
 .header{
+    display:flex; 
     height:10%; 
     width:100%; 
     margin-top:0%; 
@@ -32,34 +64,57 @@ body{
 
 .headerStart{
     position: fixed; 
+    margin-left:4%; 
     display: flex; 
-    width: 100%; 
+    width: 92%; 
     height: 100%; 
     justify-content:space-evenly; 
 }
 
 .headerPlay{
     position: fixed; 
+    margin-left:4%; 
     display: flex; 
-    width: 100%; 
+    width: 92%; 
     height: 100%; 
     justify-content:space-evenly; 
 }
 
 .headerText{
+    margin-top:0.5%; 
     color: var(--mainText); 
     font-size: 34px; 
     font-weight: bolder; 
     font-family: var(--fontA); 
 }
 
+.infoDiv{
+    position:fixed; 
+    width:4%; 
+    height:10%; 
+}
+
+.infoButton{
+    border:none; 
+    border-radius:32px; 
+    background-color:var(--bgBtnA); 
+    color:var(--txtBtnA); 
+    font-size:40px; 
+    font-weight:bolder; 
+    cursor:pointer; 
+    height:80%; 
+    width:95%; 
+}
+
 .nameBanner{
+    margin-top:0.5%; 
     color: var(--mainText); 
     font-size:32px; 
     font-family: var(--fontA); 
 }
 
 .goldBanner{
+    margin-top:0.8%; 
     color: #daaf37; 
     font-size:32px; 
     cursor:pointer; 

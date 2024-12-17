@@ -135,6 +135,7 @@ class GameState{
         ["All Hands!", "Clean something up, and sober up!"],
         ["Loyal to the Captain", "With the current captain in the lead, waterfall your drink in pirate order."],
         ["Tyranny", "We just had a mutiny against tyranny! Vote on who's the most tyrannical. They drink twice and lighten up!"],
+        ["Democratic Pirates", "Vote on who is the most sober. They drink 3 times"],
         ["Skirt the Scurvy", "Make a drink with citrus and take a drink. If you can't, drink 3 times"],
         ["Pay Attention You Scoundrel!", "Play a game of concentration. Loser drinks 2 times"],
         ["KRAKEN!", "No one wants to be sober for this. Captain, take a shot. Everyone else, drink 3 times"],
@@ -312,8 +313,25 @@ function hideElements(){
     hideCodeScreen(); 
     hideHeaderPlay(); 
     hideWinScreen(); 
+    hideInfoScreen(); 
 
     document.getElementById("setupFullDiv").style.zIndex = 9; 
+}
+
+/**
+ * used to toggle info
+ */
+function hideInfoScreen(){
+    document.getElementById("infoPageDiv").style.visibility = 'hidden'; 
+    document.getElementById("infoPageDiv").style.zIndex = 1; 
+}
+
+/**
+ * used to toggle info
+ */
+function unhideInfoScreen(){
+    document.getElementById("infoPageDiv").style.visibility = 'visible'; 
+    document.getElementById("infoPageDiv").style.zIndex = 10; 
 }
 
 /**
@@ -480,6 +498,23 @@ dropBtn.onclick=function(){
     }else{
         document.getElementById("pInput".concat(playerCount.toString())).style.visibility = 'hidden'; 
         playerCount -= 1; 
+    }
+}
+
+
+/**
+ * infoBtn:
+ * Toggle gameplay
+ */
+const infoBtn = document.getElementById("infoBtn"); 
+let infoToggle = 0; 
+infoBtn.onclick = function(){
+    if(infoToggle == 0){
+        infoToggle = 1; 
+        unhideInfoScreen(); 
+    }else{
+        infoToggle = 0; 
+        hideInfoScreen(); 
     }
 }
 
