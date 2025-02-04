@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GR Portfolio</title>
+		<!-- this is favicon -- see favicon.cc  -->
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+		<link rel="stylesheet" href="../Styling/Theme.css"> 
+		<link rel="stylesheet" href="../Styling/SpecificProjectStyle.css">
+	</head>
+	<body>
+		<!-- nav bar info -->
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="../ProjectPage.html">Projects</a>
+			<a href="../Resume.html">Resume</a>
+			<a href="../About.html" class="split">About</a>
+		</div>
+
+		<h1 class="proj-page-title">X Feed Texter</h1>
+
+		<!-- holds photos and videos horizontally -->
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Original Post</h3>
+				<img class="horiz-med" src="../media/images/xFeed/xFeedPost.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Command Line Info</h3>
+				<img class="horiz-med" src="../media/images/XFeed/xTextCL.png">
+			</div>
+			<div class="head-media">
+				<h3>Received Text</h3>
+				<img class="horiz-med" src="../media/images/xFeed/xFeedText.jpg">
+			</div>
+
+		</div>
+
+		<h2>The Project:</h2>
+		<p>This app written in Rust is designed to grab a given X users feed and send it as a text. It uses a developer account and API to request posts. It uses SMTP and a Gmail account to send an email to a phone number via the Verizon network ultimately appearing as a text. It passes time parameters to the API by reading a file that holds the most recent date and time of the last request and the current system time. With these values, anyone running the program can get just the feed of a user since when they last checked. Ideally, this can be scheduled to run as a background process a few times a day. There are a few limitations and inconveniences, namely a character limit for texting which requires breaking the message up. Sending individual messages can come in in the wrong order. There also seems to be a limit to the number of characters the API itself will return. Finally, there will be issues with any sort of media. It’s probably better to just open up the X app. But the easy, convenient, and visually pleasing way is too boring.</p>
+		<p>I got an X account when it was still Twitter to pretend to care about a few public figures. I forgot about it until recently when its primary purpose became following the posts of the one person I care to hear from. Unfortunately, armed with my weak mental fortitude, I fell victim to doom scrolling on X for the first time. Man, this place is crazy. Someone even said something that I don't agree with! I wrote this code so I wouldn’t even be tempted to dive into the moshpit. One day, I would like to have this as a scheduled process on a personal Linux server, but for now, it’s just fun Rust practice and an introduction to interacting with other services. It was also frustrating debugging, since requests are limited to 1 every 15 minutes capping out at 100 per month. I wasted hours wondering why my error messages changed when my code didn’t. </p>
+		<p>-February 2025</p>
+
+		<h2>At a Glance:</h2>
+		<ul>
+            <li>Rust app that texts a given users X feed</li>
+            <li>Uses a developer account and X API to request posts</li>
+			<li>Uses lettre crate to construct email which gets texted</li>
+		</ul>
+
+		<footer>
+			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
+			<P class="foot">LinkedIn: <a href="https://www.linkedin.com/in/garethrice23/">Gareth - LinkedIn</a></P>
+		</footer>
+
+	</body>
+</html>
