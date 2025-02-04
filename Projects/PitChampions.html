@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GR Portfolio</title>
+		<!-- this is favicon -- see favicon.cc  -->
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+		<link rel="stylesheet" href="../Styling/Theme.css"> 
+		<link rel="stylesheet" href="../Styling/SpecificProjectStyle.css">
+	</head>
+	<body>
+		<!-- nav bar info -->
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="../ProjectPage.html">Projects</a>
+			<a href="../Resume.html">Resume</a>
+			<a href="../About.html" class="split">About</a>
+		</div>
+
+		<h1 class="proj-page-title">Pit Champions Game</h1>
+
+		<!-- holds photos and videos horizontally -->
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Other Players State</h3>
+				<img class="vert-med-large" src="../media/images/PitChampions/pcStateGrounds.png">
+			</div>
+			<div class="head-media">
+				<h3>Active Players State</h3>
+				<img class="vert-med-large" src="../media/images/PitChampions/pcStateHand.png">
+			</div>
+		</div>
+
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Opponents Turn Indicator</h3>
+				<img class="horiz-med-large" src="../media/images/PitChampions/pcBotsTurns.png">
+			</div>
+			<div class="head-media">
+				<h3>Players Commands/Actions</h3>
+				<img class="horiz-med-large" src="../media/images/PitChampions/pcHelpCmd.png">
+			</div>
+		</div>
+
+		<h2>The Project:</h2>
+		<p>Pit Champions is a card game implemented in the programming language Rust. I chose Rust over a game engine simply for the fact that I’ve been wanting to strengthen my skills in the language and explore it a little bit more. Right now, it is implemented only as a command line application, but will hopefully one day have an engaging GUI. Pit Champions has a deck of cards with monsters and weapons, and players take turns playing these cards and attempting to take control of a pit. Ultimately, every turn a player maintains control, they get a point, with 3 bonus points to the final champion. The above images demonstrate what is printed after the command ‘state’: the grounds (creature staging) conditions of the opponents, the players hand, the players grounds, the pit and its current champion, and the number of remaining cards in the deck (the game ends when it runs out). When a player passes, the actions of the bot players are printed and the game state updates. The final picture shows the commands available to the player, several of which are not yet implemented but are the priority going forward.</p>
+		<p>This project has been a great way to become (re-)acquainted with Rust (after an all too brief, yet enticing tango a couple years ago). While my skills and code base would make even an entry level engineer concerned for my mental competence, the game is ultimately functional. I have already fallen in love with several features of Rust (call me a romantic) that I wish other languages had. My next orders of business are learning new features that will help me refactor, abstract, and clean up a messy albeit functional program (functional as in working, not adhering to functional programming).</p>
+
+		<h2>At a Glance:</h2>
+		<ul>
+            <li>Card game programmed in Rust</li>
+            <li>Reads cards in from CSV file database</li>
+			<li>Implements game and player logic from scratch to allow simple command line play</li>
+		</ul>
+
+		<h2>Pit Champions History:</h2>
+		<p>A number of years ago, I created a (physical) card game called Battlefield where players would take turns playing creatures and equipping them with weapons to take over and be the last one standing on the battlefield. Staging creatures in their grounds, and adding potions, weapons, and curses, while unearthing hazards to boot, they would prepare for their skirmishes and await the perfect battlefield conditions. After play testing with friends and suffering delusions of game creator grandeur, I sent my game to several publishers and accepted only rejections. I have seen my game sit in this state for almost a decade until I began its digital reincarnation a week and a half ago. I attempted to create it in a format like this once or twice before but lacked the drive and skill to take it even as far as it currently is (which unfortunately still isn’t all that far). The more I play my game, the more I see what the publishers must have, but it has not curbed my excitement or enthusiasm in the slightest. I have finally programmed someone to play the game with, re-branded it as Pit Champions, and have been enjoying playing it at even its most simple version.</p>
+		<p>I debated sharing the project as it is now, but realized it’s the very first fully playable version of what I hope to keep working on and improving. Right now it is run only at the command line, but I have been excited to explore the graphics crates that Rust has to offer, and this is my perfect excuse. Additionally, the game is currently only playable with creatures and weapons with no special rules. I intend to add ranged weapons, potions, curses, hazards, and several other types of cards which will greatly change how the game is played, and hopefully add more layers, strategy, and fun. I also intend to add a graphical component (using Rust), and if fun enough, figure out how to package it up and share it with anyone who might give half a damn.</p>
+		<p>-February 2025</p>
+
+		<footer>
+			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
+			<P class="foot">LinkedIn: <a href="https://www.linkedin.com/in/garethrice23/">Gareth - LinkedIn</a></P>
+		</footer>
+
+	</body>
+</html>
