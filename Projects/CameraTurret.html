@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GR Portfolio</title>
+		<!-- this is favicon -- see favicon.cc  -->
+		<link rel="icon" type="image/x-icon" href="media/favicon.ico">
+
+		<link rel="stylesheet" href="../Styling/Theme.css"> 
+		<link rel="stylesheet" href="../Styling/SpecificProjectStyle.css">
+	</head>
+	<body>
+		<!-- nav bar info -->
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="../ProjectPage.html">Projects</a>
+			<a href="../Resume.html">Resume</a>
+			<a href="../About.html" class="split">About</a>
+		</div>
+
+		<h1 class="proj-page-title">Camera Turret</h1>
+
+		<!-- holds photos and videos horizontally -->
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>One Sexy Turret</h3>
+				<img class="vert-med" src="../media/images/CameraTurret/VertTurretPicture.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Turret Moving</h3>
+				<video class="vert-med" controls loop autoplay muted>
+					<source src="../media/images/CameraTurret/TurretMovement.mp4">
+				</video>
+			</div>
+			<div class="head-media">
+				<h3>Camera Feed</h3>
+				<video class="horiz-med" controls loop autoplay muted>
+					<source src="../media/images/CameraTurret/ScreenGrabCameraMovement.mp4">
+				</video>
+			</div>
+		</div>
+
+		<h2>The Project:</h2>
+		<p>If I’m not snapped up by a programming company with morals soon, Raytheon might get me. It’s a camera on a remote controlled swivel. What more do you want from me? This project is similar to my rubber band turret because it uses some of that project’s old hardware. However, my tool-chain has transitioned to socket programming in Rust. This project runs a Rust multi-threaded (ooh, multi-threading *pause for applause) web server to manage a controller client on my laptop as well as a camera feed input from a Raspberry Pi. Don’t get too excited, it’s not well written (I keep writing ”refactor” everywhere though so at least I KNOW it’s not well written). </p>
+		<p>I have big plans for this project: big water/gel gun plans. I already have a ”fire” flag bit built into the code and sent to the turret. Once I up the speed and improve the camera latency on this bad boy… it will be a cooler project. It also looks kinda cute. The camera looks like a lil eye!</p>
+		<p>-July 2025</p>
+
+		<h2>At a Glance:</h2> 
+		<ul>
+            <li>Used socket programming in Rust for communication backbone</li>
+            <li>Used OpenCV Rust library on Raspberry Pi to capture camera feed</li>
+			<li>Designed and printed new arms to put on old projects base</li>
+			<li>^^^ After I spent eight hours looking for the stupid old ones</li>
+		</ul>
+
+		<footer>
+			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
+			<P class="foot">LinkedIn: <a href="https://www.linkedin.com/in/garethrice23/">Gareth - LinkedIn</a></P>
+		</footer>
+
+	</body>
+</html>
