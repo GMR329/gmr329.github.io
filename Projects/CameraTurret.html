@@ -17,7 +17,31 @@
 			<a href="../About.html" class="split">About</a>
 		</div>
 
-		<h1 class="proj-page-title">Camera Turret</h1>
+		<h1 class="proj-page-title">Gel Blaster Turret</h1>
+
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>One Sexier Turret</h3>
+				<img class="vert-med" src="../media/images/CameraTurret/VertFullTurret.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Turret Shooting</h3>
+				<video class="horiz-med" controls loop autoplay muted>
+					<source src="../media/images/CameraTurret/TurretShooting.mp4">
+				</video>
+			</div>
+			<div class="head-media">
+				<h3>Camera Feed</h3>
+				<video class="horiz-med" controls loop autoplay muted>
+					<source src="../media/images/CameraTurret/ScreenTurretMovement.mp4">
+				</video>
+			</div>
+		</div>
+
+		<h2>Project Update:</h2>
+		<p>I’m now a weapons manufacturer! This whole thing is hacked together and barely functional, but doesn’t that make it way more fun? The code is largely unchanged, though I had to adapt it for certain electrical issues. I originally had purchased an electrical gel blaster and attempted to splice into the switch mechanism and control it with a BJT. I messed up, fried the selective fire board in the gun and had to control the firing motor directly. This motor needed over an amp, and the BJT couldn’t provide it, so I switched to a MOSFET... only to realize the voltage that motor needed was too high for the servo motors. But me, I’m a clever one, and I whipped up a voltage divider circuit. And then I remembered I’m actually not clever and that circuit isn’t made to carry the current I require to the motor. My ultimate solution had a MOSFET used as a switch for the shooting motor and a DC-DC Buck converter to drop the voltage for the servo motors. The control systems code had to change to accommodate direct control of the motor, and everything else remained as it was in the previous, camera only, iteration. </p>
+		<p>The pew pew also appears rather weak in the video… I probably threw out some important plastic piece and it’s possible the gel balls lost a bit of volume. But it’s still pretty fun to shoot. </p>
+		<p>-August 2025</p>
 
 		<!-- holds photos and videos horizontally -->
 		<div class="row-cont">
@@ -50,6 +74,7 @@
             <li>Used OpenCV Rust library on Raspberry Pi to capture camera feed</li>
 			<li>Designed and printed new arms to put on old projects base</li>
 			<li>^^^ After I spent eight hours looking for the stupid old ones</li>
+			<li>Dismantled a toy gel blaster gun and spliced into the shooting motor to control with RPi</li>
 		</ul>
 
 		<footer>
