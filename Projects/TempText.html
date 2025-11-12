@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GR Portfolio</title>
+		<!-- this is favicon -- see favicon.cc  -->
+		<link rel="icon" type="image/x-icon" href="../media/favicon.ico">
+
+		<link rel="stylesheet" href="../Styling/Theme.css"> 
+		<link rel="stylesheet" href="../Styling/SpecificProjectStyle.css">
+	</head>
+	<body>
+		<!-- nav bar info -->
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="../ProjectPage.html">Projects</a>
+			<a href="../Resume.html">Resume</a>
+			<a href="../About.html" class="split">About</a>
+		</div>
+
+		<h1 class="proj-page-title">Weather Text</h1>
+
+		<!-- holds photos and videos horizontally -->
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Final Message</h3>
+				<img class="horiz-med" src="../media/images/TempText/textedWeather.jpg">
+			</div>
+			<div class="head-media">
+				<h3>URL Construction</h3>
+				<img class="horiz-med" src="../media/images/TempText/url_creation.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Message Sending</h3>
+				<img class="horiz-med" src="../media/images/TempText/text_info_fn_email.jpg">
+			</div>
+
+		</div>
+
+		<h2>The Project:</h2>
+		<p>For some months I’ve been looking at my weather app thinking “I can make a far worse version of this, easily.” When I finally put together a home lab with a travel router and a couple of Raspberry Pis, I was at last able to. I realized I was looking at multiple different weather apps and had to sift through ads and information I didn’t care about to find what I was interested in. I decided I would prefer to text myself exactly what I wanted by creating a Rust app that runs on a Raspberry Pi. I’m using the Lettre crate to send an email to my phone number that has been constructed from a request of the OpenWeatherMap API for my cities of interest. I then email myself a few times a day every few hours. I can also configure in the code on what days I want certain locations so I don’t get irrelevant data. </p>
+		<p>-November 2025</p>
+
+		<h2>At a Glance:</h2>
+		<ul>
+			<li>Used Rust reqwest crate to get JSON information from OpenWeatherMap API</li>
+			<li>Used serde and serde_json crates to handle returned data and find relevant entries to send</li>
+			<li>Used credentials JSON file that is untracked by version control to step up project security</li>
+			<li>Used lettre crate to send email to phone number to send data</li>
+		</ul>
+
+		<footer>
+			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
+			<P class="foot">LinkedIn: <a href="https://www.linkedin.com/in/garethrice23/">Gareth - LinkedIn</a></P>
+		</footer>
+
+	</body>
+</html>

@@ -1,3 +1,20 @@
+//home server modal
+var serverModal = document.getElementById("server-modal"); 
+
+var serverImg = document.getElementById("server-modal-img"); 
+var serverModalImg = document.getElementById("serverImg1"); 
+
+serverImg.onclick = function(){
+    serverModal.style.display = "block"; 
+    serverModalImg.src = this.src; 
+}
+
+var serverSpan = document.getElementsByClassName("close")[0]; 
+
+serverSpan.onclick = function(){
+    serverModal.style.display = "none"; 
+}
+
 //dice modal
 var diceModal = document.getElementById("dice-modal"); 
 
@@ -9,7 +26,7 @@ diceImg.onclick = function(){
     diceModalImg.src = this.src; 
 }
 
-var diceSpan = document.getElementsByClassName("close")[0]; 
+var diceSpan = document.getElementsByClassName("close")[1]; 
 
 diceSpan.onclick = function(){
     diceModal.style.display = "none"; 
@@ -26,7 +43,7 @@ paintImg.onclick = function(){
     paintModalImg.src = this.src; 
 }
 
-var paintSpan = document.getElementsByClassName("close")[1]; 
+var paintSpan = document.getElementsByClassName("close")[2]; 
 
 paintSpan.onclick = function(){
     paintModal.style.display = "none"; 
@@ -43,7 +60,7 @@ xliftImg.onclick = function(){
     xliftModalImg.src = this.src; 
 }
 
-var xliftSpan = document.getElementsByClassName("close")[2]; 
+var xliftSpan = document.getElementsByClassName("close")[3]; 
 
 xliftSpan.onclick = function(){
     xliftModal.style.display = "none"; 
@@ -60,7 +77,7 @@ tableImg.onclick = function(){
     tableModalImg.src = this.src; 
 }
 
-var tableSpan = document.getElementsByClassName("close")[3]; 
+var tableSpan = document.getElementsByClassName("close")[4]; 
 
 tableSpan.onclick = function(){
     tableModal.style.display = "none"; 
@@ -77,7 +94,7 @@ conchImg.onclick = function(){
     conchModalImg.src = this.src; 
 }
 
-var conchSpan = document.getElementsByClassName("close")[4]; 
+var conchSpan = document.getElementsByClassName("close")[5]; 
 
 conchSpan.onclick = function(){
     conchModal.style.display = "none"; 
@@ -130,6 +147,7 @@ document.onkeydown = function(evt){
         isEscape = (evt.keyCode === 27); 
     }
     if(isEscape){
+        serverModal.style.display = "none"; 
         diceModal.style.display = "none"; 
         paintModal.style.display = "none"; 
         xliftModal.style.display = "none"; 
@@ -142,6 +160,9 @@ document.onkeydown = function(evt){
 }
 
 window.onclick = function(event){
+    if (event.target == serverModal){
+        serverModal.style.display = "none"; 
+    }
     if (event.target == diceModal){
         diceModal.style.display = "none"; 
     }
