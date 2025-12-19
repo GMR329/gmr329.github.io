@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GR Portfolio</title>
+		<!-- this is favicon -- see favicon.cc  -->
+		<link rel="icon" type="image/x-icon" href="../media/favicon.ico">
+
+		<link rel="stylesheet" href="../Styling/Theme.css"> 
+		<link rel="stylesheet" href="../Styling/SpecificProjectStyle.css">
+	</head>
+	<body>
+		<!-- nav bar info -->
+		<div class="topnav">
+			<a href="../index.html">Home</a>
+			<a href="../ProjectPage.html">Projects</a>
+			<a href="../Resume.html">Resume</a>
+			<a href="../About.html" class="split">About</a>
+		</div>
+
+		<h1 class="proj-page-title">Minesweeper</h1>
+
+		<!-- holds photos and videos horizontally -->
+		<div class="row-cont">
+			<div class="head-media">
+				<h3>Opening Move</h3>
+				<img class="square" src="../media/images/Minesweeper/OpeningMove.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Mine Marker</h3>
+				<img class="square" src="../media/images/Minesweeper/MineFlagPlacement.jpg">
+			</div>
+			<div class="head-media">
+				<h3>Lost Game</h3>
+				<img class="square" src="../media/images/Minesweeper/LostGame.jpg">
+			</div>
+		</div>
+
+		<h2>The Project:</h2>
+		<p>I started playing so much Minesweeper recently that I was seeing squares with numbers in them when I blinked. I figured I would try to be a little productive by playing a version that I created. It didn’t take long to write this version and it is indeed fully playable. It makes a grid of purple squares at the command line and the user types in coordinates to reveal the square they want which may reveal empty adjacent squares. This made testing with a 50 by 50 grid an absolute pain. To mark a potential mine, the user negates the coordinates where they think the mine is and it gets marked (but if there’s a mine at (0, 0), maybe just make a mental note of it…). This version makes for horrible UX, but it was a fun recreation of my current phone addiction. </p>
+		<p>-December 2025</p>
+
+		<h2>At a Glance:</h2>
+		<ul>
+			<li>Minesweeper game written in Rust</li>
+			<li>Everything printed at the command line with coordinates coming from user typed input</li>
+		</ul>
+
+		<footer>
+			<P class="foot">Email: <a href="mailto:oogarethrice@gmail.com">oogarethrice@gmail.com</a></P>
+			<P class="foot">LinkedIn: <a href="https://www.linkedin.com/in/garethrice23/">Gareth - LinkedIn</a></P>
+		</footer>
+
+	</body>
+</html>
